@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DoneTaskFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#353b48" height="470.0" layoutX="-9.0" stroke="BLACK" strokeType="INSIDE" width="386.0" />
+      <Label layoutX="95.0" layoutY="22.0" text="Done Task" textFill="#ecf0f1">
+         <font>
+            <Font name="Calibri Bold" size="40.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="195.0" layoutY="402.0" onAction="#btnHistoryOnAction" prefHeight="46.0" prefWidth="112.0" style="-fx-background-color: #e67e22;" text="History" textFill="#ecf0f1">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblTaskTable" layoutX="28.0" layoutY="87.0" prefHeight="292.0" prefWidth="326.0" style="-fx-background-color: #353b48;">
+        <columns>
+          <TableColumn fx:id="colDoneTask" prefWidth="220.66668701171875" text="Done Task" />
+          <TableColumn fx:id="colDate" minWidth="0.0" prefWidth="104.33331298828125" text="Date" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="61.0" layoutY="402.0" onAction="#btnReloadOnAction" prefHeight="46.0" prefWidth="112.0" style="-fx-background-color: #e67e22;" text="Reload" textFill="#ecf0f1">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
